@@ -283,7 +283,7 @@ If you encounter any issues or have questions:
 
 **⭐ Star this repository if you found it helpful!**
 
-Made with ❤️ by [Fasih Ul Haq](https://github.com/fasih245)
+Made by [Fasih Ul Haq](https://github.com/fasih245)
 
 [🐛 Report Bug](https://github.com/yourusername/enhanced-ai-assistant/issues) • [✨ Request Feature](https://github.com/fasih245/AI-Assistant/issues) • [📖 Documentation](https://github.com/fasih245/AI-Assistant/wiki)
 
