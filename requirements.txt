@@ -1,5 +1,4 @@
-# Enhanced Smart Creation Chatbot with MediaPipe Integration
-# Complete requirements file - Copy and paste into requirements.txt
+# Requirements for Da_Bot
 
 # Core Framework
 streamlit>=1.28.0

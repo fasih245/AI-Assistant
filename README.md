@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28.0+-red.svg)](https://streamlit.io/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/yourusername/enhanced-ai-assistant/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]((https://github.com/fasih245/AI-Assistant)/graphs/commit-activity)
 
 ## 🌟 Overview
 
@@ -61,8 +61,8 @@ The Enhanced Smart AI Assistant is a cutting-edge application that combines arti
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/enhanced-ai-assistant.git
-   cd enhanced-ai-assistant
+   git clone https://https://github.com/fasih245/AI-Assistant
+   cd AI-Assistant
    ```
 
 2. **Create a virtual environment:**
@@ -263,7 +263,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter any issues or have questions:
 
-1. Check the [Issues](https://github.com/yourusername/enhanced-ai-assistant/issues) page
+1. Check the [Issues](https://github.com/fasih245/AI-Assistant/issues) page
 2. Create a new issue with detailed information
 3. Include error messages and system information
 
@@ -283,8 +283,8 @@ If you encounter any issues or have questions:
 
 **⭐ Star this repository if you found it helpful!**
 
-Made with ❤️ by [Fasih Ul Haq](https://github.com/yourusername)
+Made with ❤️ by [Fasih Ul Haq](https://github.com/fasih245)
 
-[🐛 Report Bug](https://github.com/yourusername/enhanced-ai-assistant/issues) • [✨ Request Feature](https://github.com/yourusername/enhanced-ai-assistant/issues) • [📖 Documentation](https://github.com/yourusername/enhanced-ai-assistant/wiki)
+[🐛 Report Bug](https://github.com/yourusername/enhanced-ai-assistant/issues) • [✨ Request Feature](https://github.com/fasih245/AI-Assistant/issues) • [📖 Documentation](https://github.com/fasih245/AI-Assistant/wiki)
 
 </div>
