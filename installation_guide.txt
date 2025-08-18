@@ -1,0 +1,78 @@
+# Enhanced Smart Creation Chatbot - Installation Commands
+# Copy and paste these commands in order
+
+# 1. Create a virtual environment (RECOMMENDED)
+python -m venv enhanced_chatbot_env
+
+# 2. Activate virtual environment
+# On Windows:
+enhanced_chatbot_env\Scripts\activate
+# On macOS/Linux:
+source enhanced_chatbot_env/bin/activate
+
+# 3. Upgrade pip
+python -m pip install --upgrade pip
+
+# 4. Install core requirements
+pip install streamlit>=1.28.0
+
+# 5. Install AI and language model libraries
+pip install google-generativeai>=0.3.0 groq>=0.4.0
+
+# 6. Install document processing
+pip install PyMuPDF>=1.23.0
+
+# 7. Install computer vision libraries
+pip install ultralytics>=8.0.0 torch>=2.0.0 torchvision>=0.15.0
+
+# 8. Install image processing
+pip install opencv-python>=4.8.0 Pillow>=9.5.0
+
+# 9. Install deep learning framework
+pip install tensorflow>=2.13.0
+
+# 10. Install MediaPipe (NEW - Main enhancement)
+pip install mediapipe>=0.10.0
+
+# 11. Install data processing
+pip install numpy>=1.24.0 pandas>=2.0.0
+
+# 12. Install sentiment analysis
+pip install vaderSentiment>=3.3.2 textblob>=0.17.1
+
+# 13. Install speech recognition (optional)
+pip install SpeechRecognition>=3.10.0
+
+# 14. Install audio support (optional - may need system dependencies)
+pip install pyaudio>=0.2.11
+
+# 15. Install utilities
+pip install python-dotenv>=1.0.0
+
+# 16. Install additional analytics (optional)
+pip install scikit-learn>=1.3.0 matplotlib>=3.7.0 seaborn>=0.12.0
+
+# 17. Download TextBlob corpora (run after TextBlob installation)
+python -m textblob.download_corpora
+
+# 18. Alternative: Install all at once using requirements.txt
+# pip install -r requirements.txt
+
+# PLATFORM-SPECIFIC NOTES:
+# ========================
+
+# For Apple M1/M2 Macs (if MediaPipe fails):
+# pip install mediapipe-silicon
+
+# For Windows (if pyaudio fails):
+# Download and install Microsoft C++ Build Tools
+# Or use: pip install pipwin && pipwin install pyaudio
+
+# For Linux (if pyaudio fails):
+# sudo apt-get install portaudio19-dev python3-pyaudio
+# Or: sudo yum install portaudio-devel
+
+# VERIFICATION:
+# =============
+# Test your installation:
+python -c "import streamlit, mediapipe, cv2, tensorflow; print('✅ All core libraries installed successfully!')"

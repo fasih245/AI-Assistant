@@ -1,0 +1,26 @@
+# Environment Variables (API Keys)
+.env
+
+# Large Model Files
+models/
+*.pt
+yolov8m-pose.pt
+yolov8m-seg.pt
+yolov8n.pt
+yolov8n-seg.pt
+
+# Generated Folders
+documents/
+logs/
+temp/
+vector_db/
+vector_store/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# System Files
+.DS_Store
+Thumbs.db
+.vscode/
