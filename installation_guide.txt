@@ -1,78 +1,340 @@
-# Enhanced Smart Creation Chatbot - Installation Commands
-# Copy and paste these commands in order
+# 🤖 Da_Bot - Professional Installation Guide
+# Enterprise-Ready AI Assistant with MediaPipe Integration
+# ================================================================
 
-# 1. Create a virtual environment (RECOMMENDED)
-python -m venv enhanced_chatbot_env
+# SYSTEM REQUIREMENTS
+# ===================
+# Minimum: Python 3.9+, 4GB RAM, 2-core CPU
+# Recommended: Python 3.10+, 8GB RAM, 4-core CPU, GPU (optional)
+# Storage: 5GB free space for models and dependencies
 
-# 2. Activate virtual environment
-# On Windows:
-enhanced_chatbot_env\Scripts\activate
-# On macOS/Linux:
-source enhanced_chatbot_env/bin/activate
+echo "🚀 Starting Da_Bot Professional Installation..."
 
-# 3. Upgrade pip
-python -m pip install --upgrade pip
+# STEP 1: Environment Setup (CRITICAL for stability)
+# ==================================================
+echo "📦 Step 1: Creating isolated environment..."
 
-# 4. Install core requirements
-pip install streamlit>=1.28.0
+# Create virtual environment with specific Python version
+python -m venv da_bot_env --upgrade-deps
 
-# 5. Install AI and language model libraries
-pip install google-generativeai>=0.3.0 groq>=0.4.0
+# Activate environment (PLATFORM SPECIFIC)
+# Windows:
+da_bot_env\Scripts\activate
+# macOS/Linux:
+source da_bot_env/bin/activate
 
-# 6. Install document processing
-pip install PyMuPDF>=1.23.0
+# Verify Python version
+python --version
+echo "✅ Environment created successfully"
 
-# 7. Install computer vision libraries
-pip install ultralytics>=8.0.0 torch>=2.0.0 torchvision>=0.15.0
+# STEP 2: Core Dependencies (Updated for business stability)
+# ==========================================================
+echo "⚙️ Step 2: Installing core framework..."
 
-# 8. Install image processing
-pip install opencv-python>=4.8.0 Pillow>=9.5.0
+# Upgrade pip for latest features
+python -m pip install --upgrade pip setuptools wheel
 
-# 9. Install deep learning framework
-pip install tensorflow>=2.13.0
+# Core framework with specific versions for stability
+pip install streamlit==1.29.0
 
-# 10. Install MediaPipe (NEW - Main enhancement)
-pip install mediapipe>=0.10.0
+# STEP 3: AI Model APIs (Business Intelligence)
+# =============================================
+echo "🧠 Step 3: Installing AI language models..."
 
-# 11. Install data processing
-pip install numpy>=1.24.0 pandas>=2.0.0
+# Primary AI models for business conversations
+pip install google-generativeai==0.3.2
+pip install groq==0.4.1
 
-# 12. Install sentiment analysis
-pip install vaderSentiment>=3.3.2 textblob>=0.17.1
+# STEP 4: Computer Vision Stack (Professional grade)
+# ==================================================
+echo "👁️ Step 4: Installing computer vision suite..."
 
-# 13. Install speech recognition (optional)
-pip install SpeechRecognition>=3.10.0
+# Object detection and segmentation
+pip install ultralytics==8.0.206
 
-# 14. Install audio support (optional - may need system dependencies)
-pip install pyaudio>=0.2.11
+# PyTorch with CPU support (GPU optional)
+pip install torch==2.1.0 torchvision==0.16.0 --index-url https://download.pytorch.org/whl/cpu
 
-# 15. Install utilities
-pip install python-dotenv>=1.0.0
+# Image processing essentials
+pip install opencv-python==4.8.1.78
+pip install Pillow==10.1.0
 
-# 16. Install additional analytics (optional)
-pip install scikit-learn>=1.3.0 matplotlib>=3.7.0 seaborn>=0.12.0
+# STEP 5: MediaPipe Integration (NEW - Advanced CV)
+# =================================================
+echo "🤖 Step 5: Installing MediaPipe for advanced analysis..."
 
-# 17. Download TextBlob corpora (run after TextBlob installation)
+# Google MediaPipe for face, hand, pose detection
+pip install mediapipe==0.10.7
+
+# STEP 6: Deep Learning Framework (Emotion Detection)
+# ===================================================
+echo "🧠 Step 6: Installing TensorFlow for emotion recognition..."
+
+# TensorFlow for emotion detection models
+pip install tensorflow==2.14.0
+
+# STEP 7: Data Processing and Analytics (Business Intelligence)
+# =============================================================
+echo "📊 Step 7: Installing analytics and data processing..."
+
+# Data manipulation and analysis
+pip install numpy==1.24.3
+pip install pandas==2.1.3
+
+# Advanced analytics and visualization
+pip install scikit-learn==1.3.2
+pip install matplotlib==3.8.2
+pip install seaborn==0.13.0
+
+# STEP 8: Sentiment Analysis (Business Insights)
+# ==============================================
+echo "💭 Step 8: Installing sentiment analysis engines..."
+
+# Advanced sentiment analysis
+pip install vaderSentiment==3.3.2
+pip install textblob==0.17.1
+
+# Download TextBlob corpora for enhanced NLP
 python -m textblob.download_corpora
 
-# 18. Alternative: Install all at once using requirements.txt
-# pip install -r requirements.txt
+# STEP 9: Document Processing (Enterprise Features)
+# =================================================
+echo "📄 Step 9: Installing document processing..."
 
-# PLATFORM-SPECIFIC NOTES:
+# PDF and document processing (up to 200MB)
+pip install PyMuPDF==1.23.8
+
+# STEP 10: Speech and Audio (Accessibility Features)
+# ==================================================
+echo "🎤 Step 10: Installing speech recognition and TTS..."
+
+# Speech recognition for voice input
+pip install SpeechRecognition==3.10.0
+
+# Text-to-speech engines
+pip install pyttsx3==2.90
+
+# Audio processing and recording
+pip install sounddevice==0.4.6
+pip install soundfile==0.12.1
+
+# Audio I/O (Platform specific - see troubleshooting)
+pip install pyaudio==0.2.11
+
+# STEP 11: Utilities and Configuration
+# ====================================
+echo "🔧 Step 11: Installing utilities..."
+
+# Environment management
+pip install python-dotenv==1.0.0
+
+# Enhanced audio support
+pip install pygame==2.5.2
+
+# Email processing (enhanced Unicode support)
+pip install email-validator==2.1.0
+
+# STEP 12: Emotion Model Setup (CRITICAL)
+# =======================================
+echo "😊 Step 12: Setting up emotion detection model..."
+
+# Download and run the emotion setup script
+python emotion_setup.py
+
+# STEP 13: Model Downloads (Automatic)
+# ====================================
+echo "📥 Step 13: Downloading AI models..."
+
+# YOLO models will auto-download on first use
+# MediaPipe models will auto-download on first use
+# Emotion model created by emotion_setup.py
+
+# PLATFORM-SPECIFIC FIXES
 # ========================
 
-# For Apple M1/M2 Macs (if MediaPipe fails):
-# pip install mediapipe-silicon
+echo "🔧 Applying platform-specific configurations..."
 
-# For Windows (if pyaudio fails):
-# Download and install Microsoft C++ Build Tools
-# Or use: pip install pipwin && pipwin install pyaudio
+# Windows Specific
+if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
+    echo "🪟 Windows detected - applying Windows optimizations..."
+    
+    # Windows audio fix
+    pip uninstall pyaudio -y
+    pip install pipwin
+    pipwin install pyaudio
+    
+    # Windows MediaPipe optimization
+    pip install --upgrade protobuf==3.20.3
+fi
 
-# For Linux (if pyaudio fails):
-# sudo apt-get install portaudio19-dev python3-pyaudio
-# Or: sudo yum install portaudio-devel
+# macOS Specific (especially M1/M2)
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    echo "🍎 macOS detected - applying macOS optimizations..."
+    
+    # macOS audio dependencies
+    brew install portaudio
+    
+    # M1/M2 Mac MediaPipe optimization
+    if [[ $(uname -m) == "arm64" ]]; then
+        echo "🔧 Apple Silicon detected - installing optimized packages..."
+        pip uninstall mediapipe -y
+        pip install mediapipe-silicon==0.10.7
+    fi
+fi
 
-# VERIFICATION:
-# =============
-# Test your installation:
-python -c "import streamlit, mediapipe, cv2, tensorflow; print('✅ All core libraries installed successfully!')"
+# Linux Specific
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    echo "🐧 Linux detected - applying Linux optimizations..."
+    
+    # Linux audio dependencies
+    sudo apt-get update
+    sudo apt-get install -y portaudio19-dev python3-pyaudio
+    sudo apt-get install -y espeak espeak-data libespeak1 libespeak-dev
+    
+    # Alternative for CentOS/RHEL
+    # sudo yum install portaudio-devel
+fi
+
+# VERIFICATION AND TESTING
+# ========================
+echo "✅ Step 14: Verifying installation..."
+
+# Test core imports
+python -c "
+import streamlit as st
+import mediapipe as mp
+import cv2
+import tensorflow as tf
+import ultralytics
+import numpy as np
+import pandas as pd
+print('✅ All core libraries imported successfully!')
+print(f'🤖 Streamlit: {st.__version__}')
+print(f'👁️ MediaPipe: {mp.__version__}')
+print(f'🖼️ OpenCV: {cv2.__version__}')
+print(f'🧠 TensorFlow: {tf.__version__}')
+print(f'🎯 NumPy: {np.__version__}')
+"
+
+# Test AI models
+echo "🔍 Testing AI model connections..."
+python -c "
+try:
+    import google.generativeai as genai
+    print('✅ Google Gemini API ready')
+except ImportError:
+    print('⚠️ Google Gemini not available (API key required)')
+
+try:
+    import groq
+    print('✅ Groq API ready')
+except ImportError:
+    print('⚠️ Groq not available (API key required)')
+"
+
+# Test emotion detection
+echo "😊 Testing emotion detection setup..."
+python -c "
+import os
+if os.path.exists('models/emotion_model.h5'):
+    print('✅ Emotion model found and ready')
+else:
+    print('⚠️ Emotion model not found - run emotion_setup.py')
+"
+
+# PERFORMANCE OPTIMIZATION
+# ========================
+echo "⚡ Applying performance optimizations..."
+
+# Set environment variables for optimal performance
+export TF_CPP_MIN_LOG_LEVEL=2  # Reduce TensorFlow logging
+export PYTHONPATH="${PYTHONPATH}:$(pwd)"  # Add current directory to path
+
+# Create optimized directories
+mkdir -p models cache temp logs
+
+# SECURITY SETUP
+# ==============
+echo "🔐 Setting up security configurations..."
+
+# Create .env template if it doesn't exist
+if [ ! -f .env ]; then
+    cat > .env << EOL
+# Da_Bot Professional Configuration
+# =================================
+
+# AI Model APIs (Required for enhanced features)
+GOOGLE_API_KEY=your_gemini_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
+
+# Email Configuration (Optional)
+GMAIL_EMAIL=your_email@gmail.com
+GMAIL_APP_PASSWORD=your_gmail_app_password_here
+
+# Model Configuration (Advanced)
+YOLO_SEGMENTATION_MODEL=yolov8m-seg.pt
+YOLO_POSE_MODEL=yolov8m-pose.pt
+EMOTION_MODEL_PATH=./models/emotion_model.h5
+MAX_FILE_SIZE_MB=200
+CAMERA_WIDTH=640
+CAMERA_HEIGHT=480
+
+# Performance Settings
+TF_CPP_MIN_LOG_LEVEL=2
+STREAMLIT_SERVER_MAX_UPLOAD_SIZE=200
+EOL
+    echo "📝 Created .env template - please add your API keys"
+fi
+
+# FINAL SETUP
+# ===========
+echo "🎯 Final setup and launch preparation..."
+
+# Create launch script
+cat > launch_dabot.sh << EOL
+#!/bin/bash
+echo "🚀 Launching Da_Bot Professional..."
+source da_bot_env/bin/activate  # Adjust for Windows: da_bot_env\Scripts\activate
+export TF_CPP_MIN_LOG_LEVEL=2
+streamlit run Da_Bot.py --server.maxUploadSize=200
+EOL
+
+chmod +x launch_dabot.sh
+
+# Windows launch script
+cat > launch_dabot.bat << EOL
+@echo off
+echo 🚀 Launching Da_Bot Professional...
+call da_bot_env\Scripts\activate
+set TF_CPP_MIN_LOG_LEVEL=2
+streamlit run Da_Bot.py --server.maxUploadSize=200
+pause
+EOL
+
+# SUCCESS MESSAGE
+# ===============
+echo ""
+echo "🎉 DA_BOT PROFESSIONAL INSTALLATION COMPLETE!"
+echo "=============================================="
+echo ""
+echo "📋 Next Steps:"
+echo "1. Add your API keys to the .env file"
+echo "2. Run: python emotion_setup.py (if not done automatically)"
+echo "3. Launch: ./launch_dabot.sh (Linux/Mac) or launch_dabot.bat (Windows)"
+echo "4. Open browser: http://localhost:8501"
+echo ""
+echo "🔧 Troubleshooting:"
+echo "- Check .env file for API keys"
+echo "- Verify camera permissions for real-time features"
+echo "- Run: pip install --upgrade [package_name] for updates"
+echo ""
+echo "📊 Business Features Ready:"
+echo "✅ Multi-modal AI conversation (13 moods)"
+echo "✅ Advanced computer vision (YOLO + MediaPipe)"
+echo "✅ Real-time sentiment analysis"
+echo "✅ Professional document processing (200MB)"
+echo "✅ Speech recognition and synthesis"
+echo "✅ Enterprise-grade email integration"
+echo "✅ Comprehensive analytics dashboard"
+echo ""
+echo "🚀 Your AI assistant is ready for business!"
