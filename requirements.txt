@@ -21,7 +21,7 @@ Pillow>=9.5.0
 tensorflow>=2.13.0
 
 # MediaPipe Integration (NEW)
-mediapipe>=0.10.0
+# mediapipe>=0.10.0
 
 # Data Processing and Analysis
 numpy>=1.24.0
